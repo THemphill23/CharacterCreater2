@@ -1,0 +1,115 @@
+:root{
+--button: rgb(54, 113, 223);
+--background: rgb(207, 126, 73);
+--text: whitesmoke;
+}
+
+body{
+    font-family: 'Rock Salt', cursive;
+    background-color: var(--background);
+    color: whitesmoke;
+}
+#welcome{
+    position: relative;
+    color: black;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+#sign{
+    position: relative;
+    color:black;
+    text-align: center;
+}
+
+#gridItemHelmet{
+    position: relative;
+    width: 10rem;
+    height: 9rem;
+}
+
+#gridItemSword{
+    position: relative;
+    transform: rotate(22deg);
+    width: 10rem;
+    height:15rem;
+}
+
+#gridItemShield{
+    position: relative;
+    width: 10rem;
+    height:15rem;
+}
+
+#gridItemFlames{
+    position: relative;
+    transform: rotate(150deg);
+    width: 10rem;
+    height:15rem;
+}
+
+#helmetBTN{
+    font-family: 'Rock Salt', cursive;
+    color: var(--text);
+    width: 11rem;
+    height: 13rem;
+    border-radius: 2rem;
+    background-color: var(--button);
+}
+
+#swordBTN{
+    font-family: 'Rock Salt', cursive;
+    color: var(--text);
+    width: 11rem;
+    border-radius: 2rem;
+    background-color: var(--button);
+}
+
+#shieldBTN{
+    font-family: 'Rock Salt', cursive;
+    color: var(--text);
+    width: 11rem;
+    border-radius: 2rem;
+    background-color: var(--button);
+}
+
+#flamesBTN{
+    font-family: 'Rock Salt', cursive;
+    color: var(--text);
+    width: 11rem;
+    border-radius: 2rem;
+    background-color: var(--button);
+}
+
+.container1{
+    display: grid;
+    padding-left: 28.5rem;
+    padding-bottom: 1rem;
+    margin: 1rem;
+    grid-template-columns: repeat(3, 12rem);
+    grid-template-rows: repeat(1, 12rem);
+}
+
+.container2{
+    display: grid;
+    padding-left: 16.5rem;
+    margin: 1rem;
+    grid-template-columns: repeat(5, 12rem);
+    grid-template-rows: repeat(1, 21rem);
+}
+
+.container3{
+    display: grid;
+    padding-left: 16.5rem;
+    margin: 1rem;
+    grid-template-columns: repeat(5, 12rem);
+    grid-template-rows: repeat(1, 10rem);
+}
+
+#footer{
+    position: relative;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
