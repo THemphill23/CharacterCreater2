@@ -1,12 +1,14 @@
+import Header from "./js/components/head"
 
-const area1 = document.getElementById('helmWords');
-const helmButton = document.getElementById('helmetBTN');
-const swordButton = document.getElementById('swordBTN');
-const area2 = document.getElementById('weaponWords');
-const magicButton = document.getElementById('flamesBTN');
-const area3 = document.getElementById('magicWords')
-const shieldButton = document.getElementById('shieldBTN')
-const area4 = document.getElementById('shieldWords')
+const area1 = document.querySelector("#helmWords");
+const head = document.querySelector("#head")
+const helmButton = document.querySelector("#helmetBTN");
+const swordButton = document.querySelector("#swordBTN");
+const area2 = document.querySelector("#weaponWords");
+const magicButton = document.querySelector("#flamesBTN");
+const area3 = document.querySelector("magicWords")
+const shieldButton = document.querySelector("shieldBTN")
+const area4 = document.querySelector("#shieldWords")
 
 helmButton.addEventListener ("mouseenter", function() {
 area1.innerHTML = "Click this button to personalize your character's background."
@@ -14,6 +16,11 @@ area1.innerHTML = "Click this button to personalize your character's background.
 
 helmButton.addEventListener ("mouseleave", function() {
     area1.innerHTML = ""
+})
+
+helmButton.addEventListener ("click", function() {
+    window.location="personality.html"
+    head.innerHTML = Header()
 })
 
 swordButton.addEventListener ("mouseenter", function() {

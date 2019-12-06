@@ -1,0 +1,18 @@
+{
+  "name": "CharacterCreater",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/THemphill23/CharacterCreater2.git",
+  "author": "Taylor Hemphill <54860461+THemphill23@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+},
+
+"scripts": {
+  "start": "webpack-dev-server --mode development --content-base docs/ --open --hot",
+  "build": "webpack --mode production --content-base docs/ --output-path docs/"
+  }
+}
