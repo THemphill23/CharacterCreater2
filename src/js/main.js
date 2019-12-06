@@ -1,13 +1,14 @@
 import HeaderP from "./components/headP"
 import Header from "./components/head"
 import Footer from "./components/footer"
+import Suit from "./components/suit"
 
 export default () => {
     pageBuild();
 }
 
 function pageBuild(){
-    // startUp()
+    startUp()
     head();
     foot();
 }
@@ -21,8 +22,10 @@ function foot(){
     const footer = document.getElementById("foot")
     footer.innerHTML = Footer()
 }
-// function startUp(){
-//     const area1 = document.querySelector("#helmWords");
+function startUp(){
+    const app = document.querySelector("#app");
+    app.innerHTML = Suit()
+}
 //     const helmButton = document.querySelector("#helmetBTN");
 //     const swordButton = document.querySelector("#swordBTN");
 //     const area2 = document.querySelector("#weaponWords");
