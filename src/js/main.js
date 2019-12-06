@@ -1,48 +1,72 @@
-import Header from "./js/components/head"
+import HeaderP from "./components/headP"
+import Header from "./components/head"
+import Footer from "./components/footer"
 
-const area1 = document.querySelector("#helmWords");
-const head = document.querySelector("#head")
-const helmButton = document.querySelector("#helmetBTN");
-const swordButton = document.querySelector("#swordBTN");
-const area2 = document.querySelector("#weaponWords");
-const magicButton = document.querySelector("#flamesBTN");
-const area3 = document.querySelector("magicWords")
-const shieldButton = document.querySelector("shieldBTN")
-const area4 = document.querySelector("#shieldWords")
+export default () => {
+    pageBuild();
+}
 
-helmButton.addEventListener ("mouseenter", function() {
-area1.innerHTML = "Click this button to personalize your character's background."
-})
+function pageBuild(){
+    // startUp()
+    head();
+    foot();
+}
 
-helmButton.addEventListener ("mouseleave", function() {
-    area1.innerHTML = ""
-})
+function head(){
+    const header = document.getElementById("head")
+    header.innerHTML = Header()
+}
 
-helmButton.addEventListener ("click", function() {
-    window.location="personality.html"
-    head.innerHTML = Header()
-})
+function foot(){
+    const footer = document.getElementById("foot")
+    footer.innerHTML = Footer()
+}
+// function startUp(){
+//     const area1 = document.querySelector("#helmWords");
+//     const helmButton = document.querySelector("#helmetBTN");
+//     const swordButton = document.querySelector("#swordBTN");
+//     const area2 = document.querySelector("#weaponWords");
+//     const magicButton = document.querySelector("#flamesBTN");
+//     const area3 = document.querySelector("magicWords")
+//     const shieldButton = document.querySelector("shieldBTN")
+//     const area4 = document.querySelector("#shieldWords")
 
-swordButton.addEventListener ("mouseenter", function() {
-    area2.innerHTML = "Click this button to determine your character's weapons."
-})
+//     helmButton.addEventListener ("mouseenter", function() {
+//     area1.innerHTML = "Click this button to personalize your character's background."
+//     })
 
-swordButton.addEventListener ("mouseleave", function() {
-    area2.innerHTML = ""
-})
+//     helmButton.addEventListener ("mouseleave", function() {
+//         area1.innerHTML = ""
+//     })
 
-magicButton.addEventListener ("mouseenter", function() {
-area3.innerHTML = "Click this button to determine your character's magic and/or abilities."
-})
-
-magicButton.addEventListener ("mouseleave", function() {
-    area3.innerHTML = ""
-})
-
-shieldButton.addEventListener ("mouseenter", function() {
-    area4.innerHTML = "Click this button to determine your character's armor and proctection."
-    })
+//     helmButton.addEventListener ("click", function() {
+//         window.location="personality.html"
+//         head.innerHTML = HeaderP()
+//     })
     
-shieldButton.addEventListener ("mouseleave", function() {
-    area4.innerHTML = ""
-})
+//     swordButton.addEventListener ("mouseenter", function() {
+//         area2.innerHTML = "Click this button to determine your character's weapons."
+//     })
+    
+//     swordButton.addEventListener ("mouseleave", function() {
+//         area2.innerHTML = ""
+//     })
+    
+//     magicButton.addEventListener ("mouseenter", function() {
+//     area3.innerHTML = "Click this button to determine your character's magic and/or abilities."
+//     })
+    
+//     magicButton.addEventListener ("mouseleave", function() {
+//         area3.innerHTML = ""
+//     })
+    
+//     shieldButton.addEventListener ("mouseenter", function() {
+//         area4.innerHTML = "Click this button to determine your character's armor and proctection."
+//     })
+        
+//     shieldButton.addEventListener ("mouseleave", function() {
+//         area4.innerHTML = ""
+//     })
+    
+// }
+
