@@ -1,5 +1,5 @@
 export default function HeaderP(){
     return `
-        <h1>Personality</h1>
+        <h1 id="person">Personality</h1>
     `
 }
