@@ -18,17 +18,6 @@ function home(){
     goHome();
 }
 
-// function goHome(){
-//     const person = document.querySelector("#person")
-//     const app = document.querySelector("#app");
-//     const header = document.querySelector("#head")
-
-//         person.addEventListener ("click", function() {
-//         header.innerHTML = Header();
-//         app. innerHTML = Suit();
-//     })
-// }
-
 function rollOver(){    
     const header = document.querySelector("#head")
     const helmButton = document.querySelector("#helmetBTN");

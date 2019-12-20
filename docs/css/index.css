@@ -109,6 +109,23 @@ body{
     background-color: var(--button);
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#homeButton, #worldButton, #charButton, #loreButton{
+    font-family: 'Rock Salt', cursive;
+    color: var(--text);
+    width: 11rem;
+    border-radius: 2rem;
+    background-color: var(--button);
+}
+
 #footer{
     position: relative;
     text-align: center;
