@@ -1,21 +1,16 @@
-import goHome from "./personalityFunction"
 import headP from "./components/headP"
 import Suit from "./components/suit"
 import Personality from "./components/personality"
+import rollOver2 from  "./components/personality"
 
 export default () => {
     suitUp();
-    home();
     rollOver();
 }
 
 function suitUp(){
     const app = document.querySelector("#app");
     app.innerHTML = Suit()
-}
-
-function home(){
-    goHome();
 }
 
 function rollOver(){    

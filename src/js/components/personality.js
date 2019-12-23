@@ -1,20 +1,23 @@
 export default function Personality(){
     return `
-        <div class="container">
-        <section id="gridItem gridItem1">
-
+    <div class="container2">
+        <section>
         </section>
 
-        <button id="helmetBTN"><img src="/images/knight-helmet.jpg" alt="helmet" id="gridItemHelmet"/>Personality</button>
-  
-        <section id="helmWords">   
+        <img src="/images/clipart-man.png" alt="man" class="logo" id="man"/>
+
+        <section>
         </section>
-    
-        <button id="swordBTN"><img src="/images/sword.png" alt="sword" id="gridItemSword"/>Weapons</button>
-        
-        <button id="shieldBTN"><img src="/images/armor.png" alt="shield" id="gridItemShield"/>Armor</button>
-    
-        <button id="flamesBTN"><img src="/images/flames.png" alt="flames" id="gridItemFlames">Magic</button>
+
+        <section>
+            <strong id="title">Categories</strong>
+            <article id="origin">Origin</article>
+            <article id="profession">Profession</article>
+            <article id="mentality">Mentality</article>
+        </section>
+
+        <section class="logo" id="info">
+        </section>
     </div>
-        `
+    `
 }
