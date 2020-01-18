@@ -1,5 +1,6 @@
 import headP from "./components/headP"
 import Suit from "./components/suit"
+import Nav from "./components/nav"
 import Personality from "./components/personality"
 import rollOver2 from  "./components/personality"
 
@@ -9,8 +10,10 @@ export default () => {
 }
 
 function suitUp(){
+    const nav = document.querySelector("#nav");
     const app = document.querySelector("#app");
-    app.innerHTML = Suit()
+    nav.innerHTML = "";
+    app.innerHTML = Suit();
 }
 
 function rollOver(){    
@@ -30,6 +33,7 @@ function rollOver(){
     
         helmButton.addEventListener ("click", function() {
             header.innerHTML = headP();
+            nav.innerHTML = Nav();
             app.innerHTML = Personality();
         })
         
