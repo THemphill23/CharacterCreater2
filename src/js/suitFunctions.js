@@ -2,7 +2,7 @@ import headP from "./components/headP"
 import Suit from "./components/suit"
 import Nav from "./components/nav"
 import Personality from "./components/personality"
-import rollOver2 from  "./components/personality"
+// import rollOver2 from  "./components/personality"
 
 export default () => {
     suitUp();

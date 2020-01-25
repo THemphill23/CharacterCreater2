@@ -3,24 +3,24 @@ import Suit from "./components/suit"
 
 export default () => {
     goHome();
-    rollOver2();
+    // rollOver2();
 }
 
 function goHome(){
-    const person = document.querySelector("#homeBTN")
+    const home = document.querySelector("#homeButton")
     const app = document.querySelector("#app");
     const header = document.querySelector("#head")
-        person.addEventListener ("click", function() {
+        home.addEventListener ("click", function() {
             app. innerHTML = Suit();
             header.innerHTML = Header();
     })
 }
 
-function rollOver2(){
-    const orign = document.querySelector("#orign")
-    const info = document.querySelector("#info")
+// function rollOver2(){
+//     const orign = document.querySelector("#orign")
+//     const info = document.querySelector("#info")
 
-    orign.addEventListener ("mouseenter", function() {
-        info.innerHTML = `Words About Origin`
-        })
-}
+//     orign.addEventListener ("mouseenter", function() {
+//         info.innerHTML = `Words About Origin`
+//         })
+// }
