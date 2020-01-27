@@ -1,8 +1,6 @@
 import Header from "./components/head"
-// import goHome from "./personalityFunction"
 import Footer from "./components/footer"
 import suitUp from "./suitFunctions"
-import { HotModuleReplacementPlugin } from "webpack"
 
 export default () => {
     pageBuild();
@@ -11,7 +9,6 @@ export default () => {
 function pageBuild(){
     startUp()
     head();
-    // home();
     foot();
 }
 
@@ -28,7 +25,3 @@ function foot(){
 function startUp(){
     suitUp();
 }
-
-// function home(){
-//     goHome();
-// }

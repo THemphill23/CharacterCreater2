@@ -73,9 +73,14 @@ html{
     background-color: var(--button);
 }
 
-#man{
+#man, #woman{
     width: 20rem;
     height: 35rem;
+}
+
+#wpn{
+    width: 7rem;
+    height: 7rem;
 }
 
 #homeButton{
@@ -103,6 +108,14 @@ html{
     display: grid;
     padding-left: 5rem;
     grid-template-columns: repeat(5, 11rem);
+    grid-template-rows: repeat(1, 35.5rem);
+}
+
+.container3{
+    display: grid;
+    padding-left: 5rem;
+    justify-content: center;
+    grid-template-columns: repeat(4, 11rem);
     grid-template-rows: repeat(1, 35.5rem);
 }
 

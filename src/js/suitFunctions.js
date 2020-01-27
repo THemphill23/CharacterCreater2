@@ -1,12 +1,15 @@
-import headP from "./components/headP"
+import HeaderP from "./components/headP"
+import HeaderW from "./components/headW"
 import Suit from "./components/suit"
 import Nav from "./components/nav"
 import Personality from "./components/personality"
-// import rollOver2 from  "./components/personality"
+import Weapons from "./components/weapons"
 
 export default () => {
     suitUp();
     rollOver();
+    click();
+    // personality();
 }
 
 function suitUp(){
@@ -17,7 +20,6 @@ function suitUp(){
 }
 
 function rollOver(){    
-    const header = document.querySelector("#head")
     const helmButton = document.querySelector("#helmetBTN");
     const swordButton = document.querySelector("#swordBTN");
     const shieldButton = document.querySelector("#shieldBTN")
@@ -31,11 +33,6 @@ function rollOver(){
             helmButton.innerHTML = `<img src="/images/knight-helmet.jpg" alt="helmet" id="gridItemHelmet"/>Personality`
         })
     
-        helmButton.addEventListener ("click", function() {
-            header.innerHTML = headP();
-            nav.innerHTML = Nav();
-            app.innerHTML = Personality();
-        })
         
         swordButton.addEventListener ("mouseenter", function() {
             swordButton.innerHTML = `Click this button to determine your character's weapons.`
@@ -45,8 +42,9 @@ function rollOver(){
             swordButton.innerHTML = `<img src="/images/sword.png" alt="sword" id="gridItemSword"/>Weapons`
         })
         
+        
         magicButton.addEventListener ("mouseenter", function() {
-        magicButton.innerHTML = `Click this button to determine your character's magic and/or abilities.`
+            magicButton.innerHTML = `Click this button to determine your character's magic and/or abilities.`
         })
         
         magicButton.addEventListener ("mouseleave", function() {
@@ -56,8 +54,38 @@ function rollOver(){
         shieldButton.addEventListener ("mouseenter", function() {
             shieldButton.innerHTML = `Click this button to determine your character's armor and proctection.`
         })
-            
+        
         shieldButton.addEventListener ("mouseleave", function() {
             shieldButton.innerHTML = `<img src="/images/armor.png" alt="shield" id="gridItemShield"/>Armor`
         })
+    }
+    
+    function click(){
+        const header = document.querySelector("#head")
+        const helmButton = document.querySelector("#helmetBTN");
+        const swordButton = document.querySelector("#swordBTN");
+        const shieldButton = document.querySelector("#shieldBTN")
+        const magicButton = document.querySelector("#flamesBTN");
+    
+        helmButton.addEventListener ("click", function() {
+            header.innerHTML = HeaderP();
+            nav.innerHTML = Nav();
+            app.innerHTML = Personality();
+        })
+
+        swordButton.addEventListener ("click", function() {
+            header.innerHTML = HeaderW();
+            nav.innerHTML = Nav();
+            app.innerHTML = Weapons();
+        })
 }
+
+// function personality(){
+//     const home = document.querySelector("#homeButton")
+//     const app = document.querySelector("#app");
+//     const header = document.querySelector("#head")
+//         home.addEventListener ("click", function() {
+//             app. innerHTML = Suit();
+//             header.innerHTML = Header();
+//     })
+// }
