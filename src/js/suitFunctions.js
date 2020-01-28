@@ -2,14 +2,13 @@ import HeaderP from "./components/headP"
 import HeaderW from "./components/headW"
 import Suit from "./components/suit"
 import Nav from "./components/nav"
-import Personality from "./components/personality"
+import displayPersona from "./personalityFunction"
 import Weapons from "./components/weapons"
 
 export default () => {
     suitUp();
     rollOver();
     click();
-    // personality();
 }
 
 function suitUp(){
@@ -22,8 +21,9 @@ function suitUp(){
 function rollOver(){    
     const helmButton = document.querySelector("#helmetBTN");
     const swordButton = document.querySelector("#swordBTN");
-    const shieldButton = document.querySelector("#shieldBTN")
+    const shieldButton = document.querySelector("#shieldBTN");
     const magicButton = document.querySelector("#flamesBTN");
+
 
         helmButton.addEventListener ("mouseenter", function() {
         helmButton.innerHTML = `Click this button to personalize your character's background.`
@@ -58,19 +58,19 @@ function rollOver(){
         shieldButton.addEventListener ("mouseleave", function() {
             shieldButton.innerHTML = `<img src="/images/armor.png" alt="shield" id="gridItemShield"/>Armor`
         })
+
     }
     
     function click(){
         const header = document.querySelector("#head")
         const helmButton = document.querySelector("#helmetBTN");
         const swordButton = document.querySelector("#swordBTN");
+        const homeButton = document.querySelector("#homeButton")
         const shieldButton = document.querySelector("#shieldBTN")
         const magicButton = document.querySelector("#flamesBTN");
     
         helmButton.addEventListener ("click", function() {
-            header.innerHTML = HeaderP();
-            nav.innerHTML = Nav();
-            app.innerHTML = Personality();
+            displayPersona();
         })
 
         swordButton.addEventListener ("click", function() {
@@ -79,13 +79,3 @@ function rollOver(){
             app.innerHTML = Weapons();
         })
 }
-
-// function personality(){
-//     const home = document.querySelector("#homeButton")
-//     const app = document.querySelector("#app");
-//     const header = document.querySelector("#head")
-//         home.addEventListener ("click", function() {
-//             app. innerHTML = Suit();
-//             header.innerHTML = Header();
-//     })
-// }

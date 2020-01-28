@@ -4,6 +4,7 @@ export default function Weapons(){
         <section>
         <br>
         <br>
+        <br>
         <br>    
         <br>
         <img src="/images/sword.png" alt="sword" class="logo" id="wpn"/>
@@ -12,15 +13,20 @@ export default function Weapons(){
         <section>
         <br>
         <br>
+        <br>
         <img src="/images/sword.png" alt="sword" class="logo" id="wpn"/>
+        <br>
         <br>
         <img src="/images/sword.png" alt="sword" class="logo" id="wpn"/>
         </section>
 
         <section>
+        <br>
         <img src="/images/sword.png" alt="sword" class="logo" id="wpn"/>
-        <br>    
+        <br> 
+        <br>  
         <img src="/images/sword.png" alt="sword" class="logo" id="wpn"/>
+        <br>
         <br>
         <img src="/images/sword.png" alt="sword" class="logo" id="wpn"/>
         </section>

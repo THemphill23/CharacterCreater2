@@ -25,3 +25,7 @@ function foot(){
 function startUp(){
     suitUp();
 }
+
+function persona(){
+    
+}

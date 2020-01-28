@@ -1,20 +1,26 @@
-import Header from "./components/head"
-import Suit from "./components/suit"
+import HeaderP from "./components/headP"
+import Nav from "./components/nav"
+import Personality from "./components/personality"
 
 export default () => {
-    goHome();
+    displayPersona();
+    // goHome();
     // rollOver2();
 }
 
-function goHome(){
-    const home = document.querySelector("#homeButton")
-    const app = document.querySelector("#app");
+function displayPersona(){
     const header = document.querySelector("#head")
-        home.addEventListener ("click", function() {
-            app. innerHTML = Suit();
-            header.innerHTML = Header();
-    })
+    const nav = document.querySelector("#nav");
+    const app = document.querySelector("#app");
+
+    header.innerHTML = HeaderP();
+    nav.innerHTML = Nav();
+    app.innerHTML = Personality();
+
 }
+// function goHome(){
+//     suitUp();
+// }
 
 // function rollOver2(){
 //     const orign = document.querySelector("#orign")
