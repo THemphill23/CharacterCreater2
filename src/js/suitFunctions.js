@@ -3,7 +3,7 @@ import HeaderW from "./components/headW"
 import Suit from "./components/suit"
 import Nav from "./components/nav"
 import displayPersona from "./personalityFunction"
-import Weapons from "./components/weapons"
+import displayWeaponry from "./weaponFunction"
 
 export default () => {
     suitUp();
@@ -74,8 +74,6 @@ function rollOver(){
         })
 
         swordButton.addEventListener ("click", function() {
-            header.innerHTML = HeaderW();
-            nav.innerHTML = Nav();
-            app.innerHTML = Weapons();
+            displayWeaponry();
         })
 }
