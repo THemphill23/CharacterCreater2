@@ -1,10 +1,12 @@
 import HeaderP from "./components/headP"
+import Header from "./components/head"
 import Nav from "./components/nav"
 import Personality from "./components/personality"
+import suitUp from "./suitFunctions"
 
 export default () => {
     displayPersona();
-    // goHome();
+    goHomeP();
     // rollOver2();
 }
 
@@ -16,11 +18,17 @@ function displayPersona(){
     header.innerHTML = HeaderP();
     nav.innerHTML = Nav();
     app.innerHTML = Personality();
-
 }
-// function goHome(){
-//     suitUp();
-// }
+
+function goHomeP(){
+    const header = document.querySelector("#head")
+    const home = document.querySelector("#homeButton")
+    
+    home.addEventListener("click", function(){
+        header.innerHTML = Header();
+        suitUp();
+    })
+}
 
 // function rollOver2(){
 //     const orign = document.querySelector("#orign")

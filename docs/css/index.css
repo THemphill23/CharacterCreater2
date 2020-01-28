@@ -78,7 +78,7 @@ html{
     height: 35rem;
 }
 
-#wpn{
+#sword, #wpn2, #bow, #wpn4, #wpn5, #wpn6{
     width: 7rem;
     height: 7rem;
 }
@@ -115,7 +115,7 @@ html{
     display: grid;
     padding-left: 5rem;
     justify-content: center;
-    grid-template-columns: repeat(4, 11rem);
+    grid-template-columns: repeat(4, 15rem);
     grid-template-rows: repeat(1, 35.5rem);
 }
 
