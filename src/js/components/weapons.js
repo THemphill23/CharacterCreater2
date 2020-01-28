@@ -14,7 +14,7 @@ export default function Weapons(){
         <br>
         <br>
         <br>
-        <img src="/images/sword.png" alt="sword" class="logo" id="wpn2"/>
+        <img src="/images/axe.png" alt="sword" class="logo" id="axe"/>
         <br>
         <br>
         <img src="/images/bow-and-arrow.png" alt="sword" class="logo" id="bow"/>
@@ -22,13 +22,13 @@ export default function Weapons(){
 
         <section>
         <br>
-        <img src="/images/sword.png" alt="sword" class="logo" id="wpn4"/>
+        <img src="" alt="sword" class="logo" id="wpn4"/>
         <br> 
         <br>  
-        <img src="/images/sword.png" alt="sword" class="logo" id="wpn5"/>
+        <img src="" alt="sword" class="logo" id="wpn5"/>
         <br>
         <br>
-        <img src="/images/sword.png" alt="sword" class="logo" id="wpn6"/>
+        <img src="" alt="sword" class="logo" id="wpn6"/>
         </section>
         
         <section class="logo" id="info">

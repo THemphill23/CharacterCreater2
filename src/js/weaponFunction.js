@@ -31,9 +31,9 @@ function goHomeW(){
 
 function rollOver2(){
     const sword = document.querySelector("#sword")
-    const mace = document.querySelector("#wpn2")
+    const axe = document.querySelector("#axe")
     const bow = document.querySelector("#bow")
-    const axe = document.querySelector("#wpn4")
+    const mace = document.querySelector("#wpn4")
     const maul = document.querySelector("#wpn5")
     const javelin = document.querySelector("#wpn6")
 
@@ -47,11 +47,11 @@ function rollOver2(){
         info.innerHTML = ``
     })
 
-    mace.addEventListener ("mouseenter", function() {
-        info.innerHTML = `Words About Mace`
-        })
+    axe.addEventListener ("mouseenter", function() {
+        info.innerHTML = `Words About Axe`
+    })
 
-    mace.addEventListener("mouseleave", function(){
+    axe.addEventListener("mouseleave", function(){
         info.innerHTML = ``
     })
 
@@ -63,11 +63,11 @@ function rollOver2(){
         info.innerHTML = ``
     })
 
-    axe.addEventListener ("mouseenter", function() {
-        info.innerHTML = `Words About Axe`
-    })
+    mace.addEventListener ("mouseenter", function() {
+        info.innerHTML = `Words About Mace`
+        })
 
-    axe.addEventListener("mouseleave", function(){
+    mace.addEventListener("mouseleave", function(){
         info.innerHTML = ``
     })
 
